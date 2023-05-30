@@ -1,7 +1,8 @@
 const { defaults } = require('../defaults');
 const { test, expect } = require('@playwright/test');
+
 // You can override the default Playwright test timeout of 30s
-test.setTimeout(60000);
+// test.setTimeout(60000);
 
 test('Checkly Homepage', async ({ page }) => {
   await page.setViewportSize(defaults.playwright.viewportSize);
